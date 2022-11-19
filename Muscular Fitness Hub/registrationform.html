@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <title>Registration Form</title>
+        <style>
+            h1 {
+                background:  rgb(15, 163, 15);
+                display: inline;
+                font-family: monospace;
+                padding: 7px 20px;
+                border-radius: 10px;
+                font-size: 1.8em;
+                font-weight: 500;
+            }
+            .btn {
+                padding: 1.5%;
+                width: 30%;
+                text-align: center;
+                font-weight: normal;
+                color: green;
+                outline: none;
+                border-color: green;
+            }
+            .btn:hover {
+                background: rgb(15, 163, 15);
+                color: white;
+            }
+            table {
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+        </style>
+
+    </head>
+    <body style="background: lightgoldenrodyellow">
+        <center class="mt-4">
+        <h1 class="text-white">Registration Form</h1>
+        <form action="#" method="POST" class="pt-4" onsubmit="submitForm()">
+            <table>
+                <tr>
+                    <td></td>
+                    <td class="px-3">
+                        <label for="initial"></label>
+                        <input type="radio" name="initial" id="ms" value="ms" required>
+                        <label for="ms">Ms.</label>
+                        <input type="radio" name="initial" id="mr" value="mr" required>
+                        <label for="mr">Mr.</label>
+                        <input type="radio" name="initial" id="mrs" value="mrs" required>
+                        <label for="mrs">Mrs.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td class="px-3"><input type="text" name="fn" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td class="px-3"><input type="text" name="ln" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td class="px-3"><input type="date" name="DOB" id="DOB" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile No.</td>
+                    <td class="px-3"><input type="text" name="mob1" minlength="10" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile No. 2</td>
+                    <td class="px-3"><input type="text" name="mob2"></td>
+                </tr>
+                <tr>
+                    <td>E-Mail</td>
+                    <td class="px-3"><input type="email" name="email" id="email" size="25" placeholder="example@xyz.com" required/></td>
+                </tr>
+                <tr>
+                    <td>Residential Address</td>
+                    <td class="px-3"><textarea name="add" cols="20" rows="2" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Pin Code</td>
+                    <td class="px-3"><input type="number" name="code"></td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td class="px-3">
+                        <input type="text" name="weight" size="15" required><strong> kg</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Height</td>
+                    <td class="px-3">
+                        <input type="text" name="height" size="15" required><strong> cm</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Blood Group</td>
+                    <td class="px-3">
+                        <select name="bld grp" required>
+                            <option value="" hidden></option>
+                            <option value="a+">A+</option>
+                            <option value="a-">A-</option>
+                            <option value="b+">B+</option>
+                            <option value="b-">B-</option>
+                            <option value="ab+">AB+</option>
+                            <option value="ab-">AB-</option>
+                            <option value="o+">O+</option>
+                            <option value="o-">O-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Do you require a personal trainer?</td>
+                    <td class="px-3">
+                        <label for="pt"></label>
+                        <input type="radio" name="pt" id="yes1" value="yes1" required>
+                        <label for="yes1">Yes</label>
+                        <input type="radio" name="pt" id="no1" value="no1" required>
+                        <label for="no1">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Have you been gym before?</td>
+                    <td class="px-3">
+                        <label for="check"></label>
+                        <input type="radio" name="check" id="yes2" value="yes2" required>
+                        <label for="yes2">Yes</label>
+                        <input type="radio" name="check" id="no2" value="no2" required>
+                        <label for="no2">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="px-3">
+                        <input type="submit" value="Submit" class="btn mt-3" title="Confirm"/>
+                        <input type="reset" value="Reset" class="btn mt-3" title="Clear"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </center>
+    </body>
+</html>
